@@ -1,1 +1,1 @@
-# ScalaCodingInterviews
+# Coding Interview Practice
