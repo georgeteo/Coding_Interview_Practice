@@ -1,3 +1,6 @@
+/* CCC 1.2: Use C or C++ to make a funciton void reverse(char *s), which
+reverses a string. */
+
 #include <stdlib.h> 
 #include <stdio.h>
 #include <string.h> 
@@ -23,6 +26,8 @@ void reverse_1(char * s) {
 /* Version 2: changes the string at the memory address that is passed in
 through the function call 
 Correct/Working Version. 
+
+Complexity: O(n)
 */
 void reverse_2(char *s){
 	int n = strlen(s);
