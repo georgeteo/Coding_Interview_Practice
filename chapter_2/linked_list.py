@@ -23,6 +23,13 @@ class singly_linked_list:
         self.head.next_node = new_node
         self.head = new_node
 
+    def remove(self, node):
+        if node.next:
+            node.data = node.next.data
+            node.next = node.next.next
+        else:
+            node = None
+
 class doubly_linked_list(singly_linked_list):
     def __init__(self, node):
         self.previous = None
@@ -32,4 +39,3 @@ class doubly_linked_list(singly_linked_list):
         new_node = double_link_node(data, prev_node=self.head)
         self.head.next_node = new_node
         self.head = new_node
-        

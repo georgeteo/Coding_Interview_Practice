@@ -2,7 +2,7 @@
 CCC 2.1:
 1. Remove duplicates from an unsorted linked list.
 We assume doubly lined list, but honestly does not matter.
-2. Do it without temporary variables
+2. Do it without temporary variables (TODO (georgeteo))
 '''
 
 import linked_list
