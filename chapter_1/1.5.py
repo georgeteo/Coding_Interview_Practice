@@ -15,6 +15,7 @@ def compress_string(s):
         else:
             compressed_string = compressed_string + [letter, 1]
     if compressed:
+        print compressed_string
         compressed_string = [str(s) for s in compressed_string] #Dumb, better way? 
         return "".join(compressed_string)
     else:
