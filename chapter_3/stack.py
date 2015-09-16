@@ -23,6 +23,8 @@ class stack(object):
         '''
         Peek at the top of the stack without removing it.
         '''
+        if self.head is None:
+            return None
         return self.head.data
 
     def pop(self):
@@ -32,3 +34,21 @@ class stack(object):
         popped_head = self.head
         self.head = popped_head.next
         return popped_head.data
+
+class stack_with_length(stack):
+    def __init__(self, head=None):
+        self.length = 1 if head else 0
+        super(stack_with_length, self).__init__(head)
+
+    def push(self, data):
+        super(stack_with_length, self).push(data)
+        self.length += 1
+
+    def pop(self):
+        popped_head = self.head
+        if popped_head is None:
+            return None
+        self.head = popped_head.next
+        if popped_head is not None:
+            self.length -= 1
+        return popped_head
