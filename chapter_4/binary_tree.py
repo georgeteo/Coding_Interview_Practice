@@ -19,7 +19,7 @@ class binary_tree(object):
 
     @left_child.setter
     def left_child(self, left_child_data):
-        self.__left_child = left_child
+        self.__left_child = left_child_data
 
     @property
     def right_child(self):
@@ -27,7 +27,7 @@ class binary_tree(object):
 
     @right_child.setter
     def right_child(self, right_child_data):
-        self.__right_child = right_child
+        self.__right_child = right_child_data
 
     @property
     def depth(self):

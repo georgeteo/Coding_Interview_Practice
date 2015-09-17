@@ -21,6 +21,22 @@ class binary_search_tree(object):
     def depth(self, depth):
         self.__depth = depth
 
+    @property
+    def left_child(self):
+        return self.__left_child
+
+    @left_child.setter
+    def left_child(self, left_child_data):
+        self.__left_child = left_child_data
+
+    @property
+    def right_child(self):
+        return self.__right_child
+
+    @right_child.setter
+    def right_child(self, right_child_data):
+        self.__right_child = right_child_data
+
     def add(self, new_id):
         if new_id <= self.__id:
             if self.__left_child is None:
