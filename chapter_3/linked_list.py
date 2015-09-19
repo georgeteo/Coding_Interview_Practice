@@ -28,11 +28,11 @@ class singly_linked_list(object):
         '''
         Insert node after: index, or data
         '''
-        new_node = single_note(data)
+        new_node = single_node(data)
         if type(after) == int:
-            __insert_by_index(new_node, after)
+            self.__insert_by_index(new_node, after)
         else:
-            __insert_by_data(new_node, after)
+            self.__insert_by_data(new_node, after)
 
     def __insert_by_index(self, new_node, after):
         '''
@@ -79,7 +79,7 @@ class singly_linked_list(object):
 
     def delete(self, data, n=1):
         '''
-        Deletes first n occurances of data
+        Deletes first n occurrences of data
         '''
         node = self.head
         while n > 0:

@@ -3,7 +3,6 @@ CCC 3.5: Implement queue from 2 stacks
 '''
 
 from stack import stack_with_length
-from linked_list import single_node
 
 class queue_from_stack(object):
     def __init__(self):
